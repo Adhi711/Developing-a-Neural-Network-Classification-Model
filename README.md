@@ -147,7 +147,7 @@ with torch.no_grad():
 accuracy = accuracy_score(actuals, predictions)
 conf_matrix = confusion_matrix(actuals, predictions)
 class_report = classification_report(actuals, predictions, target_names=[str(i) for i in label_encoder.classes_])
-print("Name: Allen Joveth P")
+print("Name: Adhars Vidyardh U")
 print("Register No: 212223240007")
 print(f'Test Accuracy: {accuracy:.2f}%')
 print("\nConfusion Matrix:\n", conf_matrix)
@@ -168,7 +168,7 @@ with torch.no_grad():
     # Select the prediction for the sample (first element)
     predicted_class_index = torch.argmax(output[0]).item()
     predicted_class_label = label_encoder.inverse_transform([predicted_class_index])[0]
-print("Name: Adharsh vdyardh u")
+print("Name: Adharsh vidyardh u")
 print("Register No: 212224230007")
 print(f'Predicted class for sample input: {predicted_class_label}')
 print(f'Actual class for sample input: {label_encoder.inverse_transform([y_test[12].item()])[0]}')
